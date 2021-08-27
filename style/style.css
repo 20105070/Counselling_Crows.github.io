@@ -1,0 +1,51 @@
+/*Style sheet.*/
+
+
+/*Changes the background colour to navy, the text colour to white, and the font to Courier.*/
+
+#bdy {
+    background-color: #000036;
+    color: #FFFFFF;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+/*Changes the background colour to green grape, the text colour to navy, the text size to 1.5em, the text to bold, and the text to centre text.*/
+
+#heading {
+    background-color: #d8da7a;
+    color: #000036;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+/*Changes the image's position on hover by inverting it along the x axis.*/
+
+.crow:hover {
+    transform: scaleX(-1);
+}
+
+
+/*Changes the text size to 1.5em, the text to bold, and the text to centre text.*/
+
+.subheading {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+/*Changes the image's width to 180px.*/
+
+.thumbnail {
+    width: 180px;
+}
+
+
+/*Changes the image's colour on hover by converting it to sepia.*/
+
+.thumbnail:hover {
+    filter: sepia(100%);
+}

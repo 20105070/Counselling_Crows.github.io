@@ -1,0 +1,180 @@
+<!--Gallery page; displays navigation bar and images of the therapists and the trainees that can be hovered over and clicked.-->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Website of Crow Counselling">
+    <meta name="keywords" content="call, psychology, therapy">
+    <meta name="author" content="Daniel Syrén">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Counselling Crows' Gallery</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+
+<body id="bdy">
+
+    <!--Navigation bar; contains the image link to the home page and the text links to the gallery page, contact page, and testimonies page as well as highlights the current page.-->
+    <div id="navigation" class="row">
+        <div class="col-lg-3" style="background-color: #d8da7a; font-size: 2em; font-weight: bold">
+            <a href="../index.html"><img class="crow" src="../images/Logo.jpg" alt="Flying Crow" height="100px"></a>
+        </div>
+        <div class="col-lg-3" style="background-color: #d8da7a; font-size: 2em; font-weight: bold"><a href="gallery.html">Gallery</a></div>
+        <div class="col-lg-3" style="background-color: #6f2da8; font-size: 2em; font-weight: bold"><a href="../contact/contact.html">Contact</a></div>
+        <div class="col-lg-3" style="background-color: #6f2da8; font-size: 2em; font-weight: bold"><a href="../testimonies/testimonies.html">Testimonies</a></div>
+    </div>
+    <div class="row">
+        <div id="heading">GALLERY</div>
+    </div>
+    <br />
+
+    <!--Images of the therapists and the trainees that highlight on hover and expand/explain on click.-->
+    <div id="gallery">
+        <p class="subheading">Therapists</p>
+        <div class="container">
+            <div class="row" style="padding-left: 25%; padding-right: 25%">
+                <div class="col-lg-2" style="width: 180px"><img class="thumbnail" onclick="showhide('jenny')" src="../images/Jenny.png" alt="Jenny's Profile"></div>
+                <div class="col-lg-2" style="width: 180px"><img class="thumbnail" onclick="showhide('anna')" src="../images/Anna.png" alt="Anna's Profile"></div>
+                <div class="col-lg-2" style="width: 180px"><img class="thumbnail" onclick="showhide('cristin')" src="../images/Cristin.png" alt="Cristin's Profile"></div>
+                <div class="col-lg-2" style="width: 180px"><img class="thumbnail" onclick="showhide('jacob')" src="../images/Jacob.png" alt="Jacob's Profile"></div>
+                <div class="col-lg-2" style="width: 180px"><img class="thumbnail" onclick="showhide('phillip')" src="../images/Phillip.png" alt="Phillip's Profile"></div>
+                <div class="col-lg-2" style="width: 180px"><img class="thumbnail" onclick="showhide('mo')" src="../images/Mo.png" alt="Mo's Profile"></div>
+            </div>
+        </div>
+        <br />
+        <p class="subheading">Trainees</p>
+        <div class="container">
+            <div class="row" style="padding-left: 25%; padding-right: 25%">
+                <div class="col-lg-2" style="width: 180px"><img class="thumbnail" onclick="showhide('joseph')" src="../images/Joseph.png" alt="Joseph's Profile"></div>
+                <div class="col-lg-2" style="width: 180px"><img class="thumbnail" onclick="showhide('mark')" src="../images/Mark.png" alt="Mark's Profile"></div>
+                <div class="col-lg-2" style="width: 180px"><img class="thumbnail" onclick="showhide('angie')" src="../images/Angie.png" alt="Angie's Profile"></div>
+                <div class="col-lg-2" style="width: 180px"><img class="thumbnail" onclick="showhide('kendrick')" src="../images/Kendrick.png" alt="Kendrick's Profile"></div>
+                <div class="col-lg-2" style="width: 180px"><img class="thumbnail" onclick="showhide('rachel')" src="../images/Rachel.png" alt="Rachel's Profile"></div>
+                <div class="col-lg-2" style="width: 180px"><img class="thumbnail" onclick="showhide('katherine')" src="../images/Katherine.png" alt="Katherine's Profile"></div>
+            </div>
+        </div>
+    </div>
+
+    <!--Hidden expansions and explanations that are displayed by clicking an individual image of a therapist or trainee.-->
+    <div id="jenny" class="container" style="display: none">
+        <div class="row">
+            <div class="col-lg-6"><img src="../images/Jenny.png" alt="Jenny's Profile"></div>
+            <div class="col-lg-6">
+                <p>Name: Jenny Grant<br /><br />Age: 32<br /><br />Speciality: Anxiety<br /><br />Availability: 00:00-02:00
+                    <br /><br />Language: English<br /><br />Supervises: Joseph<br /><br />Education: Trinity College Dublin<br /><br />Experience: 8 years</p>
+            </div>
+        </div>
+    </div>
+    <div id="anna" class="container" style="display: none">
+        <div class="row">
+            <div class="col-lg-6"><img src="../images/Anna.png" alt="Anna's Profile"></div>
+            <div class="col-lg-6">
+                <p>Name: Anna Norton<br /><br />Age: 34<br /><br />Speciality: Depression/Sexuality
+                    <br /><br />Availability: 02:00-04:00<br /><br />Language: English/Irish
+                    <br /><br />Supervises: Mark<br /><br />Education: University Collge Dublin
+                    <br /><br />Experience: 10 years<br /><br /></p>
+            </div>
+        </div>
+    </div>
+    <div id="cristin" class="container" style="display: none">
+        <div class="row">
+            <div class="col-lg-6"><img src="../images/Cristin.png" alt="Cristin's Profile"></div>
+            <div class="col-lg-6">
+                <p>Name: Cristin Smalls<br /><br />Age: 30<br /><br />Speciality: Stress<br /><br />Availability: 04:00-06:00
+                    <br /><br />Language: English/Korean<br /><br />Supervises: Angie<br /><br />Education: University of Seoul<br /><br />Experience: 6 years</p>
+            </div>
+        </div>
+    </div>
+    <div id="jacob" class="container" style="display: none">
+        <div class="row">
+            <div class="col-lg-6"><img src="../images/Jacob.png" alt="Jacob's Profile"></div>
+            <div class="col-lg-6">
+                <p>Name: Jacob Tutankhamun<br /><br />Age: 36<br /><br />Speciality: Anxiety/Depression
+                    <br /><br />Availability: 06:00-08:00<br /><br />Language: English/French
+                    <br /><br />Supervises: Kendrick<br /><br />Education: Cairo University
+                    <br /><br />Experience: 9 years</p>
+            </div>
+        </div>
+    </div>
+    <div id="phillip" class="container" style="display: none">
+        <div class="row">
+            <div class="col-lg-6"><img src="../images/Phillip.png" alt="Phillip's Profile"></div>
+            <div class="col-lg-6">
+                <p>Name: Phillip Hard<br /><br />Age: 35<br /><br />Speciality: Abuse/Stress<br /><br />Availability: 08:00-10:00
+                    <br /><br />Language: English/Welsh<br /><br />Supervises: Rachel<br /><br />Education: Cardiff University<br /><br />Experience: 7 years</p>
+            </div>
+        </div>
+    </div>
+    <div id="mo" class="container" style="display: none">
+        <div class="row">
+            <div class="col-lg-6"><img src="../images/Mo.png" alt="Mo's Profile"></div>
+            <div class="col-lg-6">
+                <p>Name: Mo Siya<br /><br />Age: 31<br /><br />Speciality: Dementia/Grief<br /><br />Availability: 10:00-12:00
+                    <br /><br />Language: English/German<br /><br />Supervises: Katherine
+                    <br /><br />Education: Nelson Mandela University<br /><br />Experience: 5 years</p>
+            </div>
+        </div>
+    </div>
+    <div id="joseph" class="container" style="display: none">
+        <div class="row">
+            <div class="col-lg-6"><img src="../images/Joseph.png" alt="Joseph's Profile"></div>
+            <div class="col-lg-6">
+                <p>Name: Joseph<br /><br />Age: 25<br /><br />Speciality: Anxiety<br /><br />Availability: 12:00-14:00
+                    <br /><br />Language: English<br /><br />Supervisor: Jenny<br /><br />Education: Middlesex University London<br /><br />Experience: 1 year</p>
+            </div>
+        </div>
+    </div>
+    <div id="mark" class="container" style="display: none">
+        <div class="row">
+            <div class="col-lg-6"><img src="../images/Mark.png" alt="Mark's Profile"></div>
+            <div class="col-lg-6">
+                <p>Name: Mark<br /><br />Age: 27<br /><br />Speciality: Sexuality<br /><br />Availability: 14:00-16:00
+                    <br /><br />Language: English<br /><br />Supervisor: Anna<br /><br />Education: University College Cork<br /><br />Experience: 2 years</p>
+            </div>
+        </div>
+    </div>
+    <div id="angie" class="container" style="display: none">
+        <div class="row">
+            <div class="col-lg-6"><img src="../images/Angie.png" alt="Angie's Profile"></div>
+            <div class="col-lg-6">
+                <p>Name: Angie<br /><br />Age: 26<br /><br />Speciality: Stress<br /><br />Availability: 16:00-18:00
+                    <br /><br />Language: English/Dutch<br /><br />Supervisor: Cristin<br /><br />Education: University of Amsterdam<br /><br />Experience: 1.5 years
+                </p>
+            </div>
+        </div>
+    </div>
+    <div id="kendrick" class="container" style="display: none">
+        <div class="row">
+            <div class="col-lg-6"><img src="../images/Kendrick.png" alt="Kendrick's Profile"></div>
+            <div class="col-lg-6">
+                <p>Name: Kendrick<br /><br />Age: 27<br /><br />Speciality: Depression<br /><br />Availability: 18:00-20:00
+                    <br /><br />Language: English/Portuguese<br /><br />Supervisor: Jacob
+                    <br /><br />Education: The Open University<br /><br />Experience: 2 years</p>
+            </div>
+        </div>
+    </div>
+    <div id="rachel" class="container" style="display: none">
+        <div class="row">
+            <div class="col-lg-6"><img src="../images/Rachel.png" alt="Rachel's Profile"></div>
+            <div class="col-lg-6">
+                <p>Name: Rachel<br /><br />Age: 25<br /><br />Speciality: Abuse<br /><br />Availability: 20:00-22:00
+                    <br /><br />Language: English/Spanish<br /><br />Supervisor: Phillip
+                    <br /><br />Education: National College of Ireland<br /><br />Experience: 0.5 years</p>
+            </div>
+        </div>
+    </div>
+    <div id="katherine" class="container" style="display: none">
+        <div class="row">
+            <div class="col-lg-6"><img src="../images/Katherine.png" alt="Katherine's Profile"></div>
+            <div class="col-lg-6">
+                <p>Name: Katherine<br /><br />Age: 24<br /><br />Speciality: Grief<br /><br />Availability: 22:00-00:00
+                    <br /><br />Language: English/Japanese<br /><br />Supervisor: Mo<br /><br />Education: Washington State University<br /><br />Experience: 0 years</p>
+            </div>
+        </div>
+    </div>
+    <script src="../script/script.js"></script>
+</body>
+
+</html>
