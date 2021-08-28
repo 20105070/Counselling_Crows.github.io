@@ -1,13 +1,13 @@
 /*Script file.*/
 
 /*Function that generates and returns a random number between 0 and 35.*/
-function generateRandomNumber() {
+function returnRandom() {
     var max = 35;
     return Math.floor(Math.random() * max) + 1;
 }
 
-/*Function that displays reviews of Counselling Crows and changes them every 3.6 seconds by interacting with the generateRandomNumber function.*/
-function change() {
+/*Function that displays reviews of Counselling Crows and changes them every 3.6 seconds by interacting with the returnRandom function.*/
+function rotateReview() {
     setInterval(function() {
         var testimonies = [36];
         testimonies[0] = "<p><i>'Awesome service, I cannot reccommend Counselling Crows highly enough!'</i><br />Adam, 27</p>";
@@ -46,18 +46,18 @@ function change() {
         testimonies[33] = "<p><i>'Simply said, the Crows made me happier!'</i><br />Aoife, 26</p>";
         testimonies[34] = "<p><i>'I want to live again!'</i><br />Donna, 46</p>";
         testimonies[35] = "<p><i>'To the Counselling Crows!'</i><br />Summer, 41</p>";
-        document.getElementById("testimonies").innerHTML = testimonies[generateRandomNumber()] + "<br />" + testimonies[generateRandomNumber()] + "<br />" + testimonies[generateRandomNumber()] + "<br />" + testimonies[generateRandomNumber()] + "<br />" + testimonies[generateRandomNumber()] + "<br />" + testimonies[generateRandomNumber()];
+        document.getElementById("testimonies").innerHTML = testimonies[returnRandom()] + "<br />" + testimonies[returnRandom()] + "<br />" + testimonies[returnRandom()] + "<br />" + testimonies[returnRandom()] + "<br />" + testimonies[returnRandom()] + "<br />" + testimonies[returnRandom()];
     }, 3600);
 }
 
 /*Function that hides the thumbnail images and unhides an expanded and explained version of the clicked image.*/
-function showhide(profileid) {
+function switchScene(profileid) {
     document.getElementById("gallery").style.display = "none";
     document.getElementById(profileid).style.display = "block";
 }
 
 /*Function that validates the name, telephone, email, and message sections of the form by setting length and character parameters with alerts.*/
-function validate() {
+function finaliseForm() {
     var name = document.getElementById("name");
     var telephone = document.getElementById("telephone");
     var email = document.getElementById("email");
